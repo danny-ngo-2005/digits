@@ -1,14 +1,38 @@
+:root {
+  --nat-navbar: #afc7df;
+  --nat-navbar-bg: #acc7e3;
+  --nat-navbar-bg-rgb: 121, 160, 169;
+  --nat-navbar-text-color: white;
+}
+
 html,
 body {
-  --bs-light-rgb: 236, 236, 236;
+  --bs-darkv: var(--nat-navbar-bg);
+  --bs-dark-rgb: var(--nat-navbar-bg-rgb);
+  --bs-light-rgb: 121, 160, 169;
   box-sizing: border-box;
   height: 100%;
   padding: 0;
   margin: 0;
+  background: fixed center url("/R.jpeg");
+  background-size: cover;
 }
+body .navbar {
+  --bs-navbar-active-color: var(--nat-navbar-highlight-text);
+  --bs-navbar-brand-color: var(--nat-navbar-text-color);
+  --bs-navbar-brand-hover-color: var(--nat-navbar-highlight-text);
+  --bs-navbar-color: var(--nat-navbar-text-color);
+  --bs-navbar-hover-color: var(--nat-navbar-highlight-text);
+}
+
+footer, footer a {
+  color: var(--nat-navbar-text-color);
+}
+
 .wrapper {
   box-sizing: border-box;
   min-height: 100%;
   display: flex;
   flex-direction: column;
 }
+

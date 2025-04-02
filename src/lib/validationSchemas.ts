@@ -21,4 +21,5 @@ export interface Contact {
   address: string;
   image: string;
   description: string;
+  owner: string;
 }

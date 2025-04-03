@@ -34,6 +34,12 @@ export const EditStuffSchema = Yup.object({
   owner: Yup.string().required(),
 });
 
+export const AddNoteSchema = Yup.object({
+  note: Yup.string().required(),
+  owner: Yup.string().required(),
+  contactID: Yup.number().required(),
+});
+
 export interface Contact {
   firstName: string;
   lastName: string;
@@ -41,4 +47,5 @@ export interface Contact {
   image: string;
   description: string;
   owner: string;
+  id: number;
 }
